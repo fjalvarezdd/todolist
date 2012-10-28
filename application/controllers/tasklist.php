@@ -105,6 +105,7 @@ class Tasklist extends CI_Controller {
 	 * @access public
 	 */
 	public function edit($id, $newValue) {
+		$newValue = $this->_escapeHtml($newValue);
 		$this -> tasks -> editTask($id, $newValue);
 	}
 

@@ -1,0 +1,183 @@
+/*
+=========================
+CSS for to-do list
+=========================
+*/
+
+/*
+=========================================
+RESET
+	
+Adapted from Eric Meyer's reset at:
+http://meyerweb.com/eric/tools/css/reset/
+=========================================
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+    font-family: Helvetica, Calibri, Arial, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+=============
+GLOBAL STYLES
+=============
+*/
+
+#wrapper {
+    width: 700px;
+    margin: 2em auto;
+}
+
+h1 a{
+    font-weight: normal;
+    font-size: 2em;
+    color: #555;
+    line-height: 2em;
+}
+
+a{
+    text-decoration: none;
+}
+
+p.help {
+    font-size: 0.825em;
+    color: #aaa;
+    margin-bottom: 2em;
+}
+
+    p.help span {
+        color: #f08080;
+    }
+
+.error {
+    border: 1px solid red;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.footer {
+    margin-top: 100px;
+    text-align: right;
+}
+    .footer p, .footer a{
+        font-size: 0.825em;
+        color: #aaa;
+        margin-bottom: 2em;
+    }
+/*
+=========
+TASK LIST
+=========
+*/
+
+#task-list li {
+    line-height: 1.5em;
+    padding: 3px 6px;
+}
+
+#task-list li.expired {
+    background-color: #f08080;
+}
+
+#task-list span {
+    color: #bbb;
+    float: right;
+}
+
+#task-list li.expired span {
+    color: #111;
+}
+
+#task-list li.done{
+    text-decoration:line-through;
+}
+
+#task-list a {
+    text-decoration: none;
+    color: #111;
+}
+
+#task-list a:hover, #task-list a:focus {
+    text-decoration: underline;
+}
+
+img.editIcon {
+    position: relative;
+    margin-left: -20px;
+    overflow: hidden;
+}
+
+/*
+========
+ADD FORM
+========
+*/
+
+#form-add {
+    margin-top: 1em;
+}
+
+    #form-add #task_name {
+        width: 430px;
+    }
+	
+	#form-add #submit {
+		float: right;
+	}

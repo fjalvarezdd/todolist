@@ -49,10 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['port'] 	   = 8889;
-$db['default']['username'] = 'bwin';
-$db['default']['password'] = 'bwin01';
-$db['default']['database'] = 'bwin';
+$db['default']['username'] = 'username';
+$db['default']['password'] = 'password';
+$db['default']['database'] = 'database';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
